@@ -14,7 +14,7 @@ namespace DelegateSample
 	public class DelegateSample
 	{
 		//В методе SortStrings второй параметр имеет тип делегата StringComparer,
-		//то есть вместо этого параметра можно передать любой метод, соответствующий сигнатеру делегата
+		//то есть вместо этого параметра можно передать любой метод, соответствующий сигнатере делегата
 		public static void SortStrings(string[] array, StringComparer comparer)
 		{
 			for (int i = array.Length - 1; i > 0; i--)
@@ -41,9 +41,15 @@ namespace DelegateSample
 
 		static void MainX()
 		{
-			var strings = new[] { "A", "B", "AA" };
+			var strings = new[] { "A", "BBBB", "AA","BB" };
+			
+			StringComparer comparer; //объявляем объект-делегат
+			comparer = CompareLength; //назначаем делегату метод
 			//Вызываем метод SortStrings и передаем ему вместо второго параметра объект-делегат,
 			//указывающий на метод CompareLength
+			SortStrings(strings, comparer);
+
+			//Тоже самое можно записать корооче
 			SortStrings(strings, new StringComparer(CompareLength));
 		}
 	}

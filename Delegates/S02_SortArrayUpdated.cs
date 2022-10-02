@@ -8,16 +8,11 @@ namespace SortArrayUpdated
 {
     internal class SortArrayUpdated
     {
-		//Метод Sort делегирует интерфейсу IComparer функциональность
-		//по сравнению элементов массива
 		public static void SortStrings(string[] array, IComparer<string> comparer)
 		{
 			Array.Sort(array, comparer);
 		}
 
-		//Но для обеспечения делегирования приходится писать 
-		//слишком много инфраструктурного кода: объявлять класс,
-		//реализовывать интерфейс. Задача: сократить объем инфраструктурного кода
 		class StringLengthComparer : IComparer<string>
 		{
 			public int Compare(string x, string y)

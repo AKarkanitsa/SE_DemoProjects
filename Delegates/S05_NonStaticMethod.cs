@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace NonStaticDelegate
 {
+	public delegate int StringComparer(string x, string y);
+
+	class Comparer
+	{
+		public bool Descending { get; set; }
+		public int CompareStrings(string x, string y)
+		{
+			return x.CompareTo(y) * (Descending ? -1 : 1);
+		}
+	}
 	public class NonStaticMethod
     {
-		public delegate int StringComparer(string x, string y);
-		class Comparer
-		{
-			public bool Descending { get; set; }
-			public int CompareStrings(string x, string y)
-			{
-				return x.CompareTo(y) * (Descending ? -1 : 1);
-			}
-		}
 		static int CompareStringLength(string x, string y)
 		{
 			return x.Length.CompareTo(y.Length);
@@ -38,7 +39,7 @@ namespace NonStaticDelegate
 				}
 		}
 
-		static void MainX()
+		static void Main()
 		{
 			var strings = new[] { "A", "B", "AA" };
 			var lengthComparer = new StringComparer(CompareStringLength);
