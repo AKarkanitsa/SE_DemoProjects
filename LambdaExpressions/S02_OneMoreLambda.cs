@@ -47,8 +47,6 @@ namespace LambdaExpressions
 
             printRandomNumber();
             printRandomNumber1();
-
-
         }
     }
 }
