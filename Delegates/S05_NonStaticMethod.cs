@@ -39,7 +39,7 @@ namespace NonStaticDelegate
 				}
 		}
 
-		static void Main()
+		static void MainX()
 		{
 			var strings = new[] { "A", "B", "AA" };
 			var lengthComparer = new StringComparer(CompareStringLength);

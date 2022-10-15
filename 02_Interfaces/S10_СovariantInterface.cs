@@ -61,7 +61,7 @@ namespace CovariantInterface
     }
     public class Program
     {
-        static void Main(string[] args)
+        static void MainX(string[] args)
         {
             IMessenger<Message> gmail = new EmailMessenger();
             Message message = gmail.WriteMessage("user_1@gmail,com", "user_2@gmail.com","Hello User!");

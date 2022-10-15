@@ -1,12 +1,13 @@
 ﻿namespace SimpleInterface
 {
-    interface IUser
+    interface IUser 
     {
-        void Method();
+        void Method();  //Login
     }
 
     interface IAdmin
     {
+       
     }
 
     class User : IUser
@@ -15,8 +16,11 @@
     }
 
     class Admin : User, IAdmin
-    {
+    { 
+
     }
+
+
 
     class Program
     {

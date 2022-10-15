@@ -32,6 +32,8 @@ namespace SortArray
 			}
 		}
 
+
+
 		class StringComparer : IComparer<string>
 		{
 			public bool Descending { get; set; }

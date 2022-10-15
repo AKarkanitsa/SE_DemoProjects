@@ -33,8 +33,8 @@ namespace VirtualMethods
             var derivedObj = new DerivedClass();
             derivedObj.Print();
 
-            var derivedAsBase = (BaseClass)derivedObj;
-            derivedAsBase.Print();
+           var derivedAsBase = (BaseClass)derivedObj;
+           derivedAsBase.Print();
         }
     }
 }

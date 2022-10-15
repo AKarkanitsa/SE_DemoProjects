@@ -22,7 +22,7 @@ namespace Delegates
 			Console.WriteLine(message);
 			Console.WriteLine("===============");
 		}
-		public static void MainX()
+		public static void Main()
 		{
 			//делегает указывет на метод Console.WriteLine
 			Run(Console.WriteLine);

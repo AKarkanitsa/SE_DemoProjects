@@ -48,6 +48,7 @@ namespace DelegateSample
 			//Вызываем метод SortStrings и передаем ему вместо второго параметра объект-делегат,
 			//указывающий на метод CompareLength
 			SortStrings(strings, comparer);
+			SortStrings(strings, comparer);
 
 			//Тоже самое можно записать корооче
 			SortStrings(strings, new StringComparer(CompareLength));
