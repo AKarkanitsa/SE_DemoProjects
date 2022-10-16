@@ -81,7 +81,7 @@ namespace EventArgs
             Console.WriteLine(e.Message);
             Console.WriteLine($"Current Balance: {sender.Balance}");
         }
-        static void Main()
+        static void MainX()
         {
             BankAccount account1 = new BankAccount("Bob",100); //initial balance - 100
             BankAccount account2 = new BankAccount("Alisa", 100); //initial balance - 100
