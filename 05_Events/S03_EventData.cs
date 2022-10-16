@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EventArgs
+namespace EventData
 {
     // delegate now has two arguments: sender - the object that is raised the event
     // and e - event data
