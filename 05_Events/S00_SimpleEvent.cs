@@ -27,7 +27,7 @@ namespace SimpleEvent
 	// class  Subscriber
 	public class Program
 	{
-		static void Main()
+		static void MainX()
 		{
 			Process reading = new Process();
 			//register with an event

@@ -11,7 +11,6 @@ namespace Delegates
     {
 		static void Run(TellUser tellUser)
 		{
-
 			tellUser("hi!");
 			tellUser("how r u?");
 		}
@@ -22,7 +21,7 @@ namespace Delegates
 			Console.WriteLine(message);
 			Console.WriteLine("===============");
 		}
-		public static void Main()
+		public static void MainX()
 		{
 			//делегает указывет на метод Console.WriteLine
 			Run(Console.WriteLine);

@@ -36,7 +36,7 @@ namespace PassingDataToSubscriber
 	// class  Subscriber
 	public class Program
 	{
-		static void MainX()
+		static void Main()
 		{
 			Process reading = new Process();
 			//register with an event

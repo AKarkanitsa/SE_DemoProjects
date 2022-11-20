@@ -16,7 +16,7 @@ namespace LambdaExpressions
             Func<int, int> f = x => x + 1;
             Console.WriteLine(f(1));
 
-            //Лямбда без аргументов, возвращает целое число (случайтной число в данном случае) 
+            //Лямбда без аргументов, возвращает целое число (случайное число в данном случае) 
             Func<int> generator = () => rnd.Next();
             Console.WriteLine(generator());
 

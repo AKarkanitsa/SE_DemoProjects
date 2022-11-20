@@ -24,7 +24,7 @@ namespace AnonymousDelegates
 				}
 		}
 
-		static void MainX()
+		static void Main()
 		{
 			var strings = new[] { "A", "B", "AA" };
 			//Анонимный делегат позволяет не писать метод, а определить его по месту использования
@@ -36,6 +36,8 @@ namespace AnonymousDelegates
                     return x.Length.CompareTo(y.Length);
 				}
 			);
+
+
         }
 	}
 }

@@ -43,6 +43,8 @@ namespace SortArray
 			}
 		}
 
+
+
 		static void MainX()
 		{
 			var strings = new[] { "A", "B", "AA" };

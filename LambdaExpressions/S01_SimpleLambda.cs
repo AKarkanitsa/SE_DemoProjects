@@ -18,7 +18,7 @@
 				}
 		}
 
-		static void MainX()
+		static void Main()
 		{
 			var strings = new[] { "A", "B", "AA" };
 			//Лямбда-выражение - краткая форма записи метода.

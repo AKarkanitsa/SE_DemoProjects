@@ -54,28 +54,28 @@ namespace Events02
         static void MainX()
         {
             BankAccount account1 = new BankAccount(100); //initial balance - 100
-            // назначаем обработчика событию Notify
-            // adding event handler to the Notify event
-            account1.Notify += new AccountHandler(NotifyClient);
+                                                         // назначаем обработчика событию Notify
+                                                         // adding event handler to the Notify event
+                                                         //account1.Notify += new AccountHandler(NotifyClient);
 
-            Console.WriteLine($"Current Balance: {account1.Balance}");
-            account1.Deposit(20);    // добавляем на счет 20 //deposit with 20
-            account1.Withdraw(70);   // пытаемся снять со счета 70 // withdraw 70
-            account1.Withdraw(180);  // пытаемся снять со счета 180 // withdraw with 180
-                                     // 
+            // Console.WriteLine($"Current Balance: {account1.Balance}");
+            // account1.Deposit(20);    // добавляем на счет 20 //deposit with 20
+            // account1.Withdraw(70);   // пытаемся снять со счета 70 // withdraw 70
+            // account1.Withdraw(180);  // пытаемся снять со счета 180 // withdraw with 180
+            // 
 
             // way 2 - using anonimuos method
-            // BankAccount account2 = new BankAccount(100);
-            // account2.Notify += delegate (string mes)
-            // {
-            //     Console.WriteLine(mes);
-            // };
-            // account2.Withdraw(20);
+            //BankAccount account2 = new BankAccount(100);
+            //account2.Notify += delegate (string mes)
+            //{
+            //    Console.WriteLine(mes);
+            //};
+            //account2.Withdraw(20);
 
-            // way 3 - using lambda expressions
-            // BankAccount account3 = new BankAccount(100);
-            // account3.Notify += message => Console.WriteLine(message);
-            // account3.Deposit(20);
+            //way 3 - using lambda expressions
+            BankAccount account3 = new BankAccount(100);
+            account3.Notify += message => Console.WriteLine(message);
+            account3.Deposit(20);
         }
     }
 }

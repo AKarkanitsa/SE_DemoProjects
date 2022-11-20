@@ -39,6 +39,7 @@ namespace DelegateSample
 			return x.Length.CompareTo(y.Length);
 		}
 
+
 		static void MainX()
 		{
 			var strings = new[] { "A", "BBBB", "AA","BB" };
@@ -48,7 +49,7 @@ namespace DelegateSample
 			//Вызываем метод SortStrings и передаем ему вместо второго параметра объект-делегат,
 			//указывающий на метод CompareLength
 			SortStrings(strings, comparer);
-			SortStrings(strings, comparer);
+					
 
 			//Тоже самое можно записать корооче
 			SortStrings(strings, new StringComparer(CompareLength));
